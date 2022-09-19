@@ -191,7 +191,7 @@ li {
 
 /* section hero */
 .hero-section {
-  width: 1200px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -228,10 +228,11 @@ li {
 
   /* outline: 1px solid red; */
 }
-
+.section-skills {
+  padding-top: 94px;
+}
 
 .skills {
-  padding-top: 94px;
   display: flex;
   justify-content: center;
 }
@@ -258,10 +259,13 @@ li {
 }
 /* чим займаемось */
 
-.container-we-do {
-  /* outline: 5px solid green; */
+.section-we-do {
   padding-top: 94px;
   padding-bottom: 0px;
+}
+
+.container-we-do {
+  /* outline: 5px solid green; */
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -276,7 +280,7 @@ li {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--secondary-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .we-do-list {
   display: flex;
@@ -293,7 +297,7 @@ li {
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
-  background: var(--background-team);
+  background: var(--text-color);
 }
 
 .container-team {
@@ -303,6 +307,9 @@ li {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+.team-title {
+  margin-bottom: 50px;
 }
 
 .team-list {
@@ -315,12 +322,14 @@ li {
 .team-item {
   flex-basis: 270px;
   background-color: var(--main-light-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-img {
   display: block;
   width: 270px;
-  padding-top: 50px;
 }
 
 .team-member {
@@ -503,7 +512,6 @@ body {
   flex-basis: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
 }
 .portfolio-list:nth-child(3n) {
   margin-right: 0;
@@ -518,7 +526,7 @@ body {
   line-height: 2.25;
   letter-spacing: 0.06em;
   color: var(--secondary-color);
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .portfolio-info {
   font-size: 16px;
@@ -529,4 +537,7 @@ body {
 }
 .porfolio-text {
   padding: 20px 24px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
